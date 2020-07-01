@@ -1,0 +1,19 @@
+{
+	"exclude": [
+		"build", "test"
+	],
+	"include": [
+		"lib"
+	],
+	"compilerOptions": {
+		"moduleResolution": "node",
+		"target": "es5",
+		"noImplicitAny": false,
+		"outDir": "build",
+		"sourceMap": false,
+		"declaration": true,
+		"esModuleInterop": true,
+		"baseUrl": "lib",
+    "jsx": "react",
+	},
+}
