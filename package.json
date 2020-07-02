@@ -1,8 +1,18 @@
 {
   "name": "react-configure",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "React configuration library",
   "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagosantos967/react-configure.git"
+  },
+  "keywords": [
+    "react",
+    "configuration",
+    "configure",
+    "feature-flags"
+  ],
   "scripts": {
     "demo": "rollup -c -w",
     "compile": "tsc",
