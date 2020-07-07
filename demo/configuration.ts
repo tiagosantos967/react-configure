@@ -1,7 +1,7 @@
 import {
   Environments,
   getCurrentEnvironment
-} from './../lib';
+} from '../packages/react-configure/lib';
 
 interface EnvironmentConfigs {
   backendUrl: string;
