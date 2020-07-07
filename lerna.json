@@ -1,11 +1,13 @@
 {
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"]
+      "ignoreChanges": [
+        "*.md"
+      ]
     }
   },
   "packages": [
     "packages/*"
   ],
-  "version": "0.0.3"
+  "version": "0.0.4"
 }
