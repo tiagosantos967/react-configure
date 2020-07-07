@@ -1,0 +1,26 @@
+{
+  "name": "react-configure",
+  "version": "0.0.3",
+  "description": "React configuration library",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagosantos967/react-configure.git"
+  },
+  "keywords": [
+    "react",
+    "configuration",
+    "configure",
+    "feature-flags"
+  ],
+  "scripts": {
+    "compile": "tsc",
+    "test": "npm run compile && npm run jest",
+    "jest": "jest"
+  },
+  "author": "Tiago Santos",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.13.1"
+  }
+}

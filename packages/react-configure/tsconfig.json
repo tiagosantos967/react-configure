@@ -1,9 +1,9 @@
 {
 	"exclude": [
-		"build"
+		"build", "test"
 	],
 	"include": [
-		"demo"
+		"lib"
 	],
 	"compilerOptions": {
 		"moduleResolution": "node",
@@ -13,7 +13,7 @@
 		"sourceMap": false,
 		"declaration": true,
 		"esModuleInterop": true,
-		"baseUrl": "demo",
+		"baseUrl": "lib",
     "jsx": "react",
 	},
 }
