@@ -8,12 +8,12 @@ This library lets you define:
 - Multiple environments, each with its own configuration, like `dev`, `qa`, `prod`, etc.
 
 It also selects which environment your application is running on based on:
-1. Environment variable (`REACT_APP_ENVIRONMENT` or `STORYBOOK_ENVIRONMENT`);
-2. Current hostname like;
+1. Environment variable* (`REACT_APP_ENVIRONMENT` or `STORYBOOK_ENVIRONMENT`);
+2. Current hostname like `www.test.com`, `dev.test.com`, etc;
 
--> If an environment variable is defined, the library will ignore the current hostname!
+*If one the the specified environment variables is defined, the library will ignore the hostname
 
-This way you only have to worry about importing your configs and using them. The library will select the right environment, configs and feature-flags for you.
+By using this library you only have to define your configurations and use them. The library will select the correct environment, configs and feature-flags for you.
 
 ## Install
 
@@ -28,6 +28,11 @@ Using typescript
 configuration.ts
 
 ```typescript
+import {
+  Environments,
+  getCurrentEnvironment
+} from 'react-configure';
+
 interface EnvironmentConfigs {
   backendUrl: string;
 };
